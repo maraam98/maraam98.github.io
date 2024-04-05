@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Contact us
+    </h1>
+    <p id="description">Please fill the form to reach us
+    </p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label">Name
+        </label>
+        <input id="name" type="text" required placeholder="Enter your name">
+      </div>
+      <div>
+        <label>Last Name
+        </label>
+        <input id="last-name" type="text" required placeholder="Enter your last name">
+      </div>
+      <div>
+      <div>
+        <label>Pronouns
+        </label>
+        <input type="checkbox" value="she-her">She/her
+        <input type="checkbox" value="they-them">They/them
+        <input type="checkbox" value="he-him">He/him
+      </div>
+      <div>
+        <label id="email-label">Email
+        </label>
+        <input id="email" type="email" required placeholder="Enter your Email">
+      </div>
+      <div>
+        <label id="number-label">Phone Number
+        </label>
+        <input id="number" type="number" min="0" max="9999999999" placeholder="Phone number">
+      </div>
+        <label>Which medium do you prefer to be contacted?
+        </label>
+        <input name="medium" type="radio" value="email" checked> Email
+        <input name="medium" type="radio" value="phone"> Phone
+      </div>
+      <div>
+        <label>Subject
+        </label>
+        <select id="dropdown">
+          <option>Select</option>
+          <option>Defective product</option>
+          <option>Comment</option>
+          <option>How to buy?</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label>Message
+        </label>
+        <textarea id="name" type="textarea" required placeholder="Enter your message..."></textarea>
+      </div>
+      <div>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
