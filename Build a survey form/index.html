@@ -4,63 +4,47 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">Contact us
+    <form id="survey-form">
+      <h1 id="title">Contact us
     </h1>
     <p id="description">Please fill the form to reach us
     </p>
-    <form id="survey-form">
-      <div>
+      <fieldset>
         <label id="name-label">Name
-        </label>
         <input id="name" type="text" required placeholder="Enter your name">
-      </div>
-      <div>
-        <label>Last Name
         </label>
+        <label id="last-name">Last Name
         <input id="last-name" type="text" required placeholder="Enter your last name">
-      </div>
-      <div>
-      <div>
-        <label>Pronouns
         </label>
-        <input type="checkbox" value="she-her">She/her
+        <label id="pronouns">Pronouns<br></label>
+       <div class="centered"><input type="checkbox" value="she-her">She/Her
         <input type="checkbox" value="they-them">They/them
-        <input type="checkbox" value="he-him">He/him
-      </div>
-      <div>
-        <label id="email-label">Email
-        </label>
+       <input type="checkbox" value="he-him">He/him</div>
+        <label id="email-label"><br>Email
         <input id="email" type="email" required placeholder="Enter your Email">
-      </div>
-      <div>
+        </label>
         <label id="number-label">Phone Number
-        </label>
         <input id="number" type="number" min="0" max="9999999999" placeholder="Phone number">
-      </div>
-        <label>Which medium do you prefer to be contacted?
         </label>
-        <input name="medium" type="radio" value="email" checked> Email
-        <input name="medium" type="radio" value="phone"> Phone
-      </div>
-      <div>
-        <label>Subject
+        <label id="preference">Which one do you prefer?<br>
+       <div class="centered"> <label class="inline"><input name="preference" type="radio" value="email" checked> Email</label>
+        <label class="inline"><input type="radio" value="phone" name="preference"> Phone</label></div><br>
         </label>
+        <label id="subject">Subject
         <select id="dropdown">
           <option>Select</option>
           <option>Defective product</option>
           <option>Comment</option>
           <option>How to buy?</option>
           <option>Other</option>
-        </select>
-      </div>
-      <div>
-        <label>Message
+        </select><br class="separador">
         </label>
-        <textarea id="name" type="textarea" required placeholder="Enter your message..."></textarea>
-      </div>
-      <div>
-        <button id="submit" type="submit">Submit</button>
-      </div>
+        <label id="enter-message">Message<br>
+        <textarea id="message" type="textarea" required placeholder="Enter your message..."></textarea><br>
+         </label>
+        <button id="submit" type="submit">Submit
+        </button>
+      </fieldset>
     </form>
   </body>
 </html>
