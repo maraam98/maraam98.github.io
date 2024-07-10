@@ -1,0 +1,26 @@
+body {
+  color: #1a1a1a;
+  background-color: #faf8f9;
+  font-family: arial;
+  font-size: 15px;
+}
+
+form {
+  background-color: #e1d5da; 
+  height: 500px;
+  width: 500px;
+  padding: 2em;
+  border: 3px solid #ffffff;
+  margin: auto;
+  border-radius: 50%;
+  text-align: left;
+}
+
+fieldset {
+  margin: 70px auto 100px auto;
+  height: auto;
+  width: 60%;
+  border: 0;
+  text-align: center;
+ 
+}
